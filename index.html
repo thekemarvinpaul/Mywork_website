@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecrie | Interior Design & Landscape Studio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Lecrie<span>.</span></div>
+
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About Us</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="burger" id="burger">☰</div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Timeless Elegance<br>Curated For You</h1>
+
+      <p>
+        Interior design • Landscape architecture • Luxury furniture • Premium tiles
+      </p>
+
+      <a href="#projects" class="cta-btn">Explore Our Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>We Turn Visions Into Living Art</h2>
+
+      <p>
+        At Lecrie every project is an expression of refined design.
+        Our studio blends modern architecture with timeless elegance
+        to create spaces that inspire comfort, beauty, and harmony.
+      </p>
+
+      <p>
+        From luxury living rooms to serene outdoor landscapes,
+        we craft environments that reflect your lifestyle.
+      </p>
+    </div>
+
+    <div class="about-img">
+      <img src="images/odile-CBmEOd7r4_4-unsplash.jpg" alt="About Lecrie">
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 class="section-title">Our Expertise</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=900&q=80" alt="Interior Design">
+        <h3>Interior Design</h3>
+        <p>Luxury residential and commercial interior design services.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/WhatsApp Image 2026-03-13 at 2.07.25 PM.jpeg" alt="Landscape Design">
+        <h3>Landscape Design</h3>
+        <p>Elegant gardens, rooftop terraces and outdoor living spaces.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/download (6).jpg" alt="Premium Tiles">
+        <h3>Premium Tiles</h3>
+        <p>Curated marble, stone and porcelain collections.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="/images/istockphoto-588953258-612x612.jpg" alt="Kampala Luxury Residence">
+        <div class="project-overlay">
+          <h3>Kampala Luxury Residence</h3>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1000&q=80" alt="Modern Living Room">
+        <div class="project-overlay">
+          <h3>Modern Living Room</h3>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="images/aa89d8481cc084e649f70d831e819601.jpg" alt="Luxury Curtains">
+        <div class="project-overlay">
+          <h3>Luxury Curtains</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-logo">Lecrie</h3>
+        <p>Kampala, Uganda</p>
+        <p>hello@lecrie.design</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#services">Our Offers</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Consultation</a>
+      </div>
+
+      <div>
+        <h4>Let's Work Together</h4>
+
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Tell us about your project"></textarea>
+
+        <button class="send-btn">Send Message</button>
+      </div>
+    </div>
+
+    <p class="copyright">
+      © 2026 Lecrie Interior Designers
+    </p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.getElementById("navLinks");
+
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Close nav when a link is clicked (mobile)
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
